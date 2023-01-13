@@ -1,0 +1,220 @@
+/* common */
+
+
+
+html {
+  font-size: 100%; /*16px*/
+}
+
+body {
+    background: #577575;
+    color: #24292e;
+    font-family: "Sawarabi Gothic";
+}
+
+p {
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  /* スマホサイズになった場合、画像が縮小 */
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+  /* text-align: center; */
+}
+
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+
+/* header */
+
+#header {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 4%;
+  height: 140px;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+
+#header ul li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+
+#header ul li a {
+  color: #24292e;
+  transition: all 0.3s;
+}
+
+#header ul li a:hover {
+  opacity: 0.5;
+}
+
+
+
+
+
+/* mainvisual */
+
+#mainvisual img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* margin-top: 30px;
+    margin-left: 20px; */
+    margin: 20px auto;
+}
+
+/* about */
+
+#about ul {
+  margin-bottom: 30px;
+}
+
+#about ul li {
+  margin-bottom: 3px;
+}
+
+#about ul li:first-child {
+  margin-bottom: 30px;
+}
+
+/* news */
+
+/* #news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #c8c8c8;
+    margin-bottom: 20px;
+  }
+  
+  #news dt {
+    width: 20%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+  }
+  
+  #news dd {
+    width: 80%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+  } */
+
+  /* products */
+
+  #products ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  #products ul li {
+    width: 31%;
+    margin-bottom: 23px;
+  }
+
+  #products ul li img {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  #products ul li img:hover {
+    transform: scale(1.2, 1.2);
+    opacity: 0.7;
+  }
+
+/* news */
+
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #c8c8c8;
+  margin-bottom: 20px;
+}
+
+#news dt {
+  width: 20%;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 15px;
+}
+
+#news dd {
+  width: 80%;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 15px;
+}
+
+/* sp */
+
+@media (max-width: 600px) {
+  .site-title {
+    margin-top: 20px;
+  }
+
+  /* header */
+  #header {
+    flex-direction: column;
+    height: auto;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+
+  #header li {
+    margin-left: 20px;
+  }
+
+  /* products */
+
+  #products ul {
+    flex-direction: column;
+  }
+
+  #products ul li {
+    width: 100%;
+  }
+
+  /* news */
+
+  #news dl {
+    flex-direction: column;
+  }
+
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  #news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+}
